@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+}
+.background{
+  background-image: url(backgrond.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.dino{
+    background-image: url(dino.png);
+    /* background-color: yellow; */
+    height: 14%;
+    width: 6%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 16%;
+    left: 20%;
+}
+.dragon{
+    background-image: url(dragon.png);
+    /* background-color: red; */
+    height: 16%;
+    width: 7%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 16%;
+    left: 83%;
+}
+.dragonm{
+    animation: dragonani 1.5s linear  infinite ;
+
+}
+@keyframes dragonani {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 2%;
+    }
+}
+.dinom{
+ animation: dinoani .9s linear  infinite;
+}
+@keyframes dinoani{
+    0%{
+        bottom: 16%;
+    }
+    50%{
+        bottom: 65%;
+    }
+    100%{
+        bottom: 16%;
+    }
+}
